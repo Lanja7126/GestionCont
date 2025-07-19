@@ -1,0 +1,29 @@
+.title-label {
+    -fx-font-size: 22px;
+    -fx-font-weight: bold;
+    -fx-text-fill: #2c3e50;
+}
+
+.input-field {
+    -fx-pref-width: 250px;
+    -fx-font-size: 14px;
+    -fx-background-radius: 6;
+    -fx-padding: 8px;
+}
+
+.save-button, .show-button {
+    -fx-font-size: 14px;
+    -fx-background-color: #27ae60;
+    -fx-text-fill: white;
+    -fx-background-radius: 6;
+    -fx-padding: 10px 20px;
+}
+
+.save-button:hover, .show-button:hover {
+    -fx-background-color: #2ecc71;
+}
+
+.status-label {
+    -fx-font-size: 12px;
+    -fx-text-fill: #e74c3c;
+}

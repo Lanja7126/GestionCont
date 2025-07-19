@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.geometry.Insets?>
+
+<VBox xmlns:fx="http://javafx.com/fxml" fx:controller="com.example.gestioncont.ContactController" spacing="10" alignment="CENTER">
+    <padding><Insets top="20" right="20" bottom="20" left="20"/></padding>
+
+    <TableView fx:id="tableView" minWidth="600">
+        <columns>
+            <TableColumn fx:id="nomCol" text="Nom" minWidth="200"/>
+            <TableColumn fx:id="telCol" text="Téléphone" minWidth="200"/>
+            <TableColumn fx:id="mailCol" text="Email" minWidth="200"/>
+        </columns>
+    </TableView>
+
+    <HBox spacing="10" alignment="CENTER">
+        <Button text="Ajouter" onAction="#handleOpenAdd"/>
+        <Button text="Modifier" onAction="#handleEdit"/>
+        <Button fx:id="deleteButton" text="Supprimer" onAction="#handleDelete" disable="true"/>
+
+    </HBox>
+</VBox>

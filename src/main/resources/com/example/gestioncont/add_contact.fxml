@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.geometry.Insets?>
+
+<VBox xmlns:fx="http://javafx.com/fxml" fx:controller="com.example.gestioncont.AddContactController" spacing="10" alignment="CENTER">
+    <padding><Insets top="20" right="20" bottom="20" left="20"/></padding>
+
+    <Label text="Ajouter un contact" />
+
+    <TextField fx:id="nomField" promptText="Nom" maxWidth="300"/>
+    <TextField fx:id="telField" promptText="Téléphone" maxWidth="300"/>
+    <TextField fx:id="mailField" promptText="Email" maxWidth="300"/>
+
+    <HBox spacing="10" alignment="CENTER">
+        <Button text="Enregistrer" onAction="#handleSave"/>
+        <Button text="Annuler" onAction="#handleCancel"/>
+    </HBox>
+
+    <Label fx:id="statusLabel" text="" />
+</VBox>
