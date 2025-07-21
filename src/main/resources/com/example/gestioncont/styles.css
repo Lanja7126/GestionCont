@@ -11,7 +11,27 @@
     -fx-padding: 8px;
 }
 
-.save-button, .show-button {
+.modifierbtn{
+    -fx-font-size: 14px;
+    -fx-background-color:  #2c3e50;
+    -fx-text-fill: white;
+    -fx-background-radius: 6;
+    -fx-padding: 10px 20px;
+}
+
+.modifierbtn:hover{
+    -fx-background-color:  #3498db;
+}
+
+.deletebtn, .cancelbtn{
+    -fx-font-size: 14px;
+    -fx-background-color: #e74c3c;
+    -fx-text-fill: white;
+    -fx-background-radius: 6;
+    -fx-padding: 10px 20px;
+}
+
+.savebtn, .addbtn {
     -fx-font-size: 14px;
     -fx-background-color: #27ae60;
     -fx-text-fill: white;
@@ -19,11 +39,11 @@
     -fx-padding: 10px 20px;
 }
 
-.save-button:hover, .show-button:hover {
+.savebtn:hover, .addbtn:hover {
     -fx-background-color: #2ecc71;
 }
 
-.status-label {
+.statuslabel {
     -fx-font-size: 12px;
     -fx-text-fill: #e74c3c;
 }

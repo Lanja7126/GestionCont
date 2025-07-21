@@ -4,7 +4,7 @@
 <?import javafx.scene.layout.*?>
 <?import javafx.geometry.Insets?>
 
-<VBox xmlns:fx="http://javafx.com/fxml" fx:controller="com.example.gestioncont.ContactController" spacing="10" alignment="CENTER">
+<VBox xmlns:fx="http://javafx.com/fxml" fx:controller="com.example.gestioncont.ContactController" spacing="10" alignment="CENTER" stylesheets="@styles.css">
     <padding><Insets top="20" right="20" bottom="20" left="20"/></padding>
 
     <TableView fx:id="tableView" minWidth="600">
@@ -16,9 +16,9 @@
     </TableView>
 
     <HBox spacing="10" alignment="CENTER">
-        <Button text="Ajouter" onAction="#handleOpenAdd"/>
-        <Button text="Modifier" onAction="#handleEdit"/>
-        <Button fx:id="deleteButton" text="Supprimer" onAction="#handleDelete" disable="true"/>
+        <Button text="Ajouter" onAction="#handleOpenAdd" styleClass="addbtn"/>
+        <Button text="Modifier" onAction="#handleEdit" styleClass="modifierbtn"/>
+        <Button fx:id="deleteButton" text="Supprimer" onAction="#handleDelete" disable="true" styleClass="deletebtn"/>
 
     </HBox>
 </VBox>
