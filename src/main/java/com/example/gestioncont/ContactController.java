@@ -15,9 +15,6 @@ import java.sql.*;
 import java.util.Comparator;
 
 public class ContactController {
-
-    @FXML private TextField nomField, telField, mailField;
-    @FXML private Label statusLabel;
     @FXML private TableView<Contact> tableView;
     @FXML private TableColumn<Contact, String> nomCol;
     @FXML private TableColumn<Contact, String> telCol;

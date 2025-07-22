@@ -7,7 +7,7 @@
 <VBox xmlns:fx="http://javafx.com/fxml" fx:controller="com.example.gestioncont.AddContactController" spacing="10" alignment="CENTER" stylesheets="@styles.css">
     <padding><Insets top="20" right="20" bottom="20" left="20"/></padding>
 
-    <Label text="Ajouter un contact" styleClass="title-label"/>
+    <Label text="Ajouter un contact" fx:id="titlelabel" styleClass="title-label"/>
 
     <TextField fx:id="nomField" promptText="Nom" maxWidth="300" styleClass="input-field"/>
     <TextField fx:id="telField" promptText="Téléphone" maxWidth="300" styleClass="input-field"/>
