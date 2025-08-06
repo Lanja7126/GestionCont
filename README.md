@@ -25,16 +25,16 @@ Le projet utilise une base de données `GestionContacts` avec une table `contact
 Voici les commandes SQL à exécuter dans votre SGBD (comme MySQL ou MariaDB) :
 
 ```sql
--- Création de la base de données
 CREATE DATABASE GestionContacts;
-
--- Utilisation de la base
+```
+```sql
 USE GestionContacts;
-
--- Création de la table "contacts"
+```
+```sql
 CREATE TABLE contacts (
     id INT PRIMARY KEY AUTO_INCREMENT,
     nom VARCHAR(100) NOT NULL,
     telephone VARCHAR(20) NOT NULL,
     email VARCHAR(100)
 );
+```
